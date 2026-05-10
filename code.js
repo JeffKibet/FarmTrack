@@ -143,3 +143,14 @@ function updateSummary() {
   totalExpensesDisplay.textContent = `KES ${totalExpenses}`;
   totalProfitDisplay.textContent = `KES ${totalProfit}`;
 }
+// DELETE RECORD
+function deleteRecord(index) {
+
+    records.splice(index, 1);
+
+    localStorage.setItem("farmRecords", JSON.stringify(records));
+
+    showRecords();
+    updateSummary();
+
+}
