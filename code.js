@@ -73,3 +73,26 @@ calculateBtn.addEventListener("click", () => {
   incomeInput.value = "";
   expensesInput.value = "";
 });
+
+// SHOW RECORDS
+function showRecords() {
+
+    recordsList.innerHTML = "";
+
+    records.forEach((record, index) => {
+
+        const li = document.createElement("li");
+
+        if (record.status === "Profit") {
+             li.innerHTML = `
+                <strong>Date:</strong> ${record.date} <br>
+                <strong>Income:</strong> KES ${record.income} <br>
+                <strong>Expenses:</strong> KES ${record.expenses} <br>
+                <strong style="color:green;">
+                    Profit: KES ${record.total}
+                </strong>
+                <br><br>
+                <button onclick="deleteRecord(${index})">
+                    Delete
+                </button>
+            `;
