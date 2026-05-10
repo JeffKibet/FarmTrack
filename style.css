@@ -114,3 +114,14 @@ button:hover {
     color: #2E7D32;
 }
 
+#records-list {
+    list-style: none;
+}
+
+#records-list li {
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    line-height: 1.6;
+}
