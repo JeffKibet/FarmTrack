@@ -121,3 +121,25 @@ function showRecords() {
                 </button>
             `;
         }
+         recordsList.appendChild(li);
+
+    });
+
+}
+
+// UPDATE SUMMARY CARDS
+function updateSummary() {
+  let totalIncome = 0;
+  let totalExpenses = 0;
+  let totalProfit = 0;
+
+  records.forEach((record) => {
+    totalIncome += record.income;
+    totalExpenses += record.expenses;
+    totalProfit += record.total;
+  });
+
+  totalIncomeDisplay.textContent = `KES ${totalIncome}`;
+  totalExpensesDisplay.textContent = `KES ${totalExpenses}`;
+  totalProfitDisplay.textContent = `KES ${totalProfit}`;
+}
