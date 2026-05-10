@@ -100,3 +100,17 @@ button:hover {
     font-size: 22px;
     font-weight: bold;
 }
+
+.records-section {
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.records-section h2 {
+    margin-bottom: 20px;
+    color: #2E7D32;
+}
+
