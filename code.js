@@ -96,3 +96,28 @@ function showRecords() {
                     Delete
                 </button>
             `;
+            } else if (record.status === "Loss") {
+
+            li.innerHTML = `
+                <strong>Date:</strong> ${record.date} <br>
+                <strong>Income:</strong> KES ${record.income} <br>
+                <strong>Expenses:</strong> KES ${record.expenses} <br>
+                <strong style="color:red;">
+                    Loss: KES ${Math.abs(record.total)}
+                </strong>
+                <br><br>
+                <button onclick="deleteRecord(${index})">
+                    Delete
+                </button>
+            `;
+            } else {
+
+            li.innerHTML = `
+                <strong>Date:</strong> ${record.date} <br>
+                No Profit No Loss
+                <br><br>
+                <button onclick="deleteRecord(${index})">
+                    Delete
+                </button>
+            `;
+        }
