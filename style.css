@@ -57,3 +57,21 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    background-color: #1B5E20;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.profit {
+    color: green;
+}
+
+.loss {
+    color: red;
+}
